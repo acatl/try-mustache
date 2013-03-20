@@ -1,0 +1,63 @@
+.btn
+    border: 0
+    cursor: pointer
+    font: inherit
+    font-style: normal
+    font-weight: bold
+    line-height: 1em
+    text-align: center
+    text-decoration: none
+
+    /* vertical margin is the opposite of button's awesomeness */
+    margin-top: 0
+    margin-bottom: 0
+
+    border-radius: 2px
+    -moz-border-radius: 2px
+    -webkit-border-radius: 2px
+
+    @include background(#3594C6, #0081C6)
+
+    /* cross browser inline block hack
+       see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/ */
+    display: -moz-inline-stack
+    display: inline-block
+    vertical-align: middle
+    *display: inline
+    
+
+    /* IE luv */
+    zoom: 1
+
+    /* disable text selection (Firefox only) */
+    -moz-user-select: none
+    
+    /* no text selection for iOS */
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-user-select: none
+    -webkit-touch-callout: none
+
+    font-family: "jaf-facitweb", sans-serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
+    border: 1px solid rgba(0, 0, 0, 0.15)
+
+    &::selection
+        background: transparent
+
+    &::-moz-focus-inner
+        border: none
+
+    &:hover
+        border: 1px solid rgba(0, 0, 0, 0.32)        
+
+    &.btn-chromeless
+        background: none
+        border-color: transparent
+
+    &.btn-yellowgreen,
+    &.btn-yellowgreen:active 
+        color: white
+        @include background(#81c663, #7cb259)
+
+
+
