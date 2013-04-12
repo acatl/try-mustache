@@ -1,0 +1,70 @@
+!!! 5
+
+//[if lt IE 7]> \<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]
+//[if IE 7]> \<html class="no-js lt-ie9 lt-ie8"> <![endif]
+//[if IE 8]> \<html class="no-js lt-ie9"> <![endif]
+
+//[if gt IE 8]><!
+html.no-js
+//<![endif]
+
+head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        title Try Mustache Online
+        meta(name='description', content='Test your Mustache Templates Online')
+        //- meta(name='viewport', content='width=device-width')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+        link(rel='stylesheet', href='css/normalize.min.css')
+        link(rel='stylesheet', href='css/font-awesome.css')
+        link(rel='stylesheet', href='css/font-awesome.css')
+        link(rel='stylesheet', href='css/codemirror.css')
+        link(rel='stylesheet', href='css/cm/theme/lesser-dark.css')
+        link(rel='stylesheet', href='css/cm/theme/solarized.css')
+        link(rel='stylesheet', href='css/main.css')
+            
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,600',rel='stylesheet',type='text/css')
+
+        script(type="text/javascript", src="//use.typekit.net/moh3mgl.js")
+        script(type="text/javascript")
+            try{Typekit.load();}catch(e){}
+
+        script(src='js/plugins/modernizr-2.6.2-respond-1.1.0.min.js')
+    
+    body
+        //if lt IE 7
+            p.chromeframe
+                | You are using an
+                strong outdated
+                | browser. Please
+                a(href='http://browsehappy.com/') upgrade your browser
+                | or
+                a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+                | to improve your experience.
+
+        .header-container
+            header.wrapper.clearfix
+                #header
+           
+        .side-bar-container
+           #sidebar
+
+        .main-container
+            .main.wrapper.clearfix
+                #content
+                    include content
+                //- include html/modules/projects
+                
+        .footer-container
+            footer.wrapper
+                include footer
+
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js') 
+        script(src='//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.min.js') 
+        script(src='//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js') 
+        script(src='js/jquery-min.js') 
+        script(src='js/plugins-min.js')
+        script(src='js/main.js')
+
+        script(id='mustacheTemplate')
