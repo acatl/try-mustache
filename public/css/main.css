@@ -143,6 +143,9 @@ hr {
   left: 0;
   right: 0; }
 
+.l-relative {
+  position: relative; }
+
 .l-absolute-top-left,
 .l-absolute-top-right,
 .l-absolute-bottom,
@@ -159,6 +162,9 @@ hr {
 
 .l-absolute-bottom {
   bottom: 0; }
+
+.l-absolute-top {
+  background-color: #ff007a; }
 
 .btn {
   border: 0;
@@ -237,10 +243,13 @@ hr {
   border: 1px solid #b4312f;
   background: #dd3d3a;
   padding: 4px 4px 4px;
-  margin: 4px 10px 10px;
   color: white;
   font-weight: bold;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  top: 41px;
+  z-index: 3000;
+  right: 3px;
+  position: absolute; }
 
 .is-invalid .status-invalid {
   display: inline-block; }
@@ -271,8 +280,11 @@ hr {
   .external-documentation a {
     display: inline-block;
     background: #69540a;
-    padding: 3px 4px 6px;
-    margin-left: 3px; }
+    padding: 4px 4px 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 2px; }
 
 .mustache-description {
   margin: 10px 0;

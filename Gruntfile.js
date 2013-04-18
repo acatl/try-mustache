@@ -98,6 +98,16 @@ module.exports = function(grunt) {
                       filter: 'isFile'
                   }
               ]
+            },
+            images: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/public/img/',
+                        src: '*', 
+                        dest: 'public/img/'
+                    }
+                ]
             }
         },
 

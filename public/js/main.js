@@ -49,7 +49,7 @@
       } catch (_error) {
         e = _error;
         $cmJson.addClass("is-invalid");
-        cmOutput.setValue("Invalid JSON:\n" + e.message + "\n\nVerify through:\nhttp://www.jslint.com/");
+        cmOutput.setValue("Invalid JSON:\n" + e.message + "\n\nVerify your JSON Feed through:\nhttp://www.jslint.com/");
         return false;
       }
       mustache = cmMustache.getValue();

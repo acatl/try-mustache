@@ -63,12 +63,12 @@ $ ->
     onChange = (doc, changeObj) ->
         $cmMustache.removeClass "is-invalid"
         $cmJson.removeClass "is-invalid"
-
+        
         try
             json = JSON.parse cmJson.getValue()
         catch e
             $cmJson.addClass "is-invalid"
-            cmOutput.setValue "Invalid JSON:\n#{e.message}\n\nVerify through:\nhttp://www.jslint.com/" 
+            cmOutput.setValue "Invalid JSON:\n#{e.message}\n\nVerify your JSON Feed through:\nhttp://www.jslint.com/" 
             return false
 
         mustache = cmMustache.getValue()
